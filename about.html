@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Poolix Hotel & Resort HTML Template</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Responsive File -->
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- Color File -->
+    <link href="assets/css/color.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="loader-wrap">
+        <div class="preloader">
+          <div class="preloader-close">Preloader Close</div>
+        </div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>
+        <div class="layer layer-three"><span class="overlay"></span></div>
+      </div>
+
+      <div id="header"></div>
+
+      <script>
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading header:", error));
+      </script>
+
+      <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn">
+          <span class="fal fa-times"></span>
+        </div>
+        <div class="popup-inner">
+          <div class="overlay-layer"></div>
+          <div class="search-form">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <fieldset>
+                  <input
+                    type="search"
+                    class="form-control"
+                    name="search-input"
+                    value=""
+                    placeholder="Search Here"
+                    required
+                  />
+                  <input type="submit" value="Search Now!" class="theme-btn" />
+                </fieldset>
+              </div>
+            </form>
+            <br />
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+              <li><a href="#">Finance</a></li>
+              <li><a href="#">Idea</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Growth</a></li>
+              <li><a href="#">Plan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Title -->
+      <section class="page-title text-center">
+        <div
+          class="bg-layer"
+          style="
+            background-image: url(assets/images/pexels-kindelmedia-8688567.jpg);
+          "
+        ></div>
+        <div
+          class="pattern-layer"
+          style="background-image: url(assets/images/shape/shape-17.png)"
+        ></div>
+        <div class="auto-container">
+          <div class="content-box">
+            <h1>About Us</h1>
+            <ul class="bread-crumb clearfix">
+              <li><a href="index.html">Home</a></li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- About -->
+      <section class="section-padding pt-150">
+        <div class="auto-container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-1-image-wrap text-center mb_30 p_relative">
+                <div class="about-1-shape-1" data-parallax='{"y": -50}'>
+                  <img src="" alt="" />
+                </div>
+                <div class="d_iblock">
+                  <div class="about-1-image-1 hvr-img-zoom-1">
+                    <img src="assets/images/pexels-muffin-2434578.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+              <div class="section_heading mb_20">
+                <span class="section_heading_title_small"
+                  >About Adwaa Pools</span
+                >
+                <h2 class="section_heading_title_big">
+                  Swimming Pool Repair and <br />
+                  Maintenance Company
+                </h2>
+              </div>
+              <p class="aboout-1-desc mb_30">
+                ADWAA swimming pool contracting company provides technical
+                services specialised in pool maintenance and installation. Our
+                misson is to provide a strong relationship with our clients,
+                catering to every requirement on a longterm basis. We provide
+                superior services and imported high quality pool installation
+                products and Spare Parts..<br /><br />
+                We provide branded equipments in maintantance and chemicals
+                imported from U.S.A, Japan and other international suppliers.
+                Our services to leading fasility management companies, owners
+                associations, real estate firms, hotels ,schools ,apartments,
+                villas and community pools We have a 24/7 customer call and
+                support and the emrgency team avaliable any time ,<br /><br />
+
+                Swimming pool maintenance is a key importance to every swimmer.
+                In order to fully enjoy your pool, you must take steps to keep
+                it free from bacteria and other debris. Without a routine
+                maintenance any water body can become soiled with harmful and
+                odor producing bacteria. ADWAA swimming pools providing multi
+                types of maintenance to meet all the clients requirements.
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="fs_24 fw_sbold mb_20">Mission</h4>
+                  <p class="fs_16 fw_medium mb_30 c_dark">
+                    Committed to Quality & <br />
+                    Enjoyment
+                  </p>
+                  <p class="mb_25">
+                    To provide a safe, clean, and enjoyable swimming experience
+                    with top-quality pool services. We strive to create a
+                    relaxing and refreshing environment for all.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="fs_24 fw_sbold mb_20">Vision</h4>
+                  <p>A Future of Excellence in Aquatic Leisure</p>
+                  <ul class="list-1">
+                    <li><i class="icon-8"></i> Olympic Size Pool</li>
+                    <li><i class="icon-8"></i> Food & Drinks Service</li>
+                    <li><i class="icon-8"></i> Relax Atmosphere</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="about-1-btn mb_30">
+                <a href="about.html" class="btn-1"
+                  >Discover More<span></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section-padding pt_150 gray-bg">
+        <div class="auto-container">
+          <div class="section_heading text-center mb_60">
+            <span class="section_heading_title_small">Services</span>
+            <h2 class="section_heading_title_big">
+              Swimming Pool Facilities <br />
+              & Services
+            </h2>
+          </div>
+          <div class="swiper-container four-item-carousel">
+            <div class="swiper-wrapper">
+              <!-- Slide Item -->
+              <div class="swiper-slide">
+                <div
+                  class="service-1-block text-center wow fadeInLeft"
+                  data-wow-delay=".2s"
+                  data-wow-duration=".8s"
+                >
+                  <div class="service-1-image hvr-img-zoom-1">
+                    <img
+                      src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="service-1-link">
+                    <a
+                      class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                      href="service-details.html"
+                      ><i class="icon-9"></i
+                    ></a>
+                  </div>
+                  <h4 class="service-1-title">Equipment Install</h4>
+                  <div class="service-1-block-overlay text-center">
+                    <div class="service-1-link">
+                      <a
+                        class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                        href="service-details.html"
+                        ><i class="icon-3"></i
+                      ></a>
+                    </div>
+                    <h4 class="service-1-title">Equipment Install</h4>
+                    <p class="service-1-text">
+                      We provide expert equipment installation for pools,
+                      ensuring everything is set up for optimal performance
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide Item -->
+              <div class="swiper-slide">
+                <div
+                  class="service-1-block text-center wow fadeInLeft"
+                  data-wow-delay=".2s"
+                  data-wow-duration=".8s"
+                >
+                  <div class="service-1-image hvr-img-zoom-1">
+                    <img
+                      src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="service-1-link">
+                    <a
+                      class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                      href="service-details.html"
+                      ><i class="icon-10"></i
+                    ></a>
+                  </div>
+                  <h4 class="service-1-title">Drain & Clean</h4>
+                  <div class="service-1-block-overlay text-center">
+                    <div class="service-1-link">
+                      <a
+                        class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                        href="service-details.html"
+                        ><i class="icon-3"></i
+                      ></a>
+                    </div>
+                    <h4 class="service-1-title">Drain & Clean</h4>
+                    <p class="service-1-text">
+                      Efficient pool draining and cleaning services to keep your
+                      pool in top condition and ready for use.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide Item -->
+              <div class="swiper-slide">
+                <div
+                  class="service-1-block text-center wow fadeInLeft"
+                  data-wow-delay=".2s"
+                  data-wow-duration=".8s"
+                >
+                  <div class="service-1-image hvr-img-zoom-1">
+                    <img
+                      src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="service-1-link">
+                    <a
+                      class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                      href="service-details.html"
+                      ><i class="icon-11"></i
+                    ></a>
+                  </div>
+                  <h4 class="service-1-title">Water Analysis</h4>
+                  <div class="service-1-block-overlay text-center">
+                    <div class="service-1-link">
+                      <a
+                        class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                        href="service-details.html"
+                        ><i class="icon-3"></i
+                      ></a>
+                    </div>
+                    <h4 class="service-1-title">Water Analysis</h4>
+                    <p class="service-1-text">
+                      Comprehensive water analysis to ensure your pool's water
+                      is safe, balanced, and perfect for swimming.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide Item -->
+              <div class="swiper-slide">
+                <div
+                  class="service-1-block text-center wow fadeInLeft"
+                  data-wow-delay=".2s"
+                  data-wow-duration=".8s"
+                >
+                  <div class="service-1-image hvr-img-zoom-1">
+                    <img
+                      src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="service-1-link">
+                    <a
+                      class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                      href="service-details.html"
+                      ><i class="icon-12"></i
+                    ></a>
+                  </div>
+                  <h4 class="service-1-title">Pool Maintenance</h4>
+                  <div class="service-1-block-overlay text-center">
+                    <div class="service-1-link">
+                      <a
+                        class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary"
+                        href="service-details.html"
+                        ><i class="icon-3"></i
+                      ></a>
+                    </div>
+                    <h4 class="service-1-title">Pool Maintenance</h4>
+                    <p class="service-1-text">
+                      Regular maintenance services to keep your pool clean,
+                      functional, and safe for all users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt_40"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-1-section">
+        <div
+          class="cta-1-bg"
+          data-parallax='{"y": 30}'
+          style="
+            background-image: url(assets/images/pexels-jsalamanca-61129.jpg);
+          "
+        ></div>
+        <div class="auto-container">
+          <div class="section_heading text-center mb_40">
+            <h2 class="section_heading_title_big c_light fs_70">
+              Need High Quality Cleaning & <br />
+              Maintenance Services?
+            </h2>
+          </div>
+          <div class="text-center">
+            <div class="cta-1-link-bt">
+              <a href="javascript:void(0);" class="btn-1"
+                >Contact For Services<span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section-padding pt-150">
+        <div class="auto-container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="section_heading">
+                <span class="section_heading_title_small">Testimonials</span>
+                <h2 class="section_heading_title_big mb_20">
+                  What Our Clients Say <br />
+                  About Adwaa
+                </h2>
+              </div>
+              <div class="testimonial-1-block-wrap">
+                <div class="swiper-container single-item-carousel">
+                  <div class="swiper-wrapper">
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                      <div class="testimonial-1-block">
+                        <div class="testimonial-1-rating">
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-27"></i>
+                        </div>
+                        <div class="testimonial-1-quote-icon">
+                          <i class="icon-25"></i>
+                        </div>
+                        <p class="testimonial-1-review-desc">
+                          Amet egestas fusce sit varius viverra neque ipsum
+                          lorem mauris a accumsan nibh id mauris vestibulum eu
+                          nunc lectus faucibus sem augue molestie blandit neque
+                          quisque dolor dui consequat in et cras sit orci
+                          malesuada tristique.
+                        </p>
+                        <div class="testimonial-1-name">
+                          <span class="fs_20 fw_medium ff_oswald c_dark"
+                            >Leslie Alexander,</span
+                          >
+                          <span>Service taker</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                      <div class="testimonial-1-block">
+                        <div class="testimonial-1-rating">
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-27"></i>
+                        </div>
+                        <div class="testimonial-1-quote-icon">
+                          <i class="icon-25"></i>
+                        </div>
+                        <p class="testimonial-1-review-desc">
+                          Amet egestas fusce sit varius viverra neque ipsum
+                          lorem mauris a accumsan nibh id mauris vestibulum eu
+                          nunc lectus faucibus sem augue molestie blandit neque
+                          quisque dolor dui consequat in et cras sit orci
+                          malesuada tristique.
+                        </p>
+                        <div class="testimonial-1-name">
+                          <span class="fs_20 fw_medium ff_oswald c_dark"
+                            >Leslie Alexander,</span
+                          >
+                          <span>Service taker</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide Item -->
+                    <div class="swiper-slide">
+                      <div class="testimonial-1-block">
+                        <div class="testimonial-1-rating">
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-26"></i>
+                          <i class="icon-27"></i>
+                        </div>
+                        <div class="testimonial-1-quote-icon">
+                          <i class="icon-25"></i>
+                        </div>
+                        <p class="testimonial-1-review-desc">
+                          Amet egestas fusce sit varius viverra neque ipsum
+                          lorem mauris a accumsan nibh id mauris vestibulum eu
+                          nunc lectus faucibus sem augue molestie blandit neque
+                          quisque dolor dui consequat in et cras sit orci
+                          malesuada tristique.
+                        </p>
+                        <div class="testimonial-1-name">
+                          <span class="fs_20 fw_medium ff_oswald c_dark"
+                            >Leslie Alexander,</span
+                          >
+                          <span>Service taker</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="testimonial-1-image">
+                <img src="assets/images/pexels-naimbic-2290754.jpg" alt="" />
+              </div>
+              <div class="d-flex justify-content-end mt_70">
+                <div class="swiper-pagination p_relative"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- funfacts -->
+      <section class="funfacts-2-section z_1">
+        <div class="auto-container">
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-md-6">
+              <div class="funfact-2-block">
+                <div class="funfact-2-icon"><i class="icon-29"></i></div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <h2 class="funfact-2-number odometer" data-count="20">
+                      00
+                    </h2>
+                    <h2 class="funfact-2-number-prefix">+</h2>
+                  </div>
+                  <p class="funfact-2-title">Industry Awards</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="funfact-2-block alt">
+                <div class="funfact-2-icon"><i class="icon-30"></i></div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <h2 class="funfact-2-number odometer" data-count="98">
+                      00
+                    </h2>
+                    <h2 class="funfact-2-number-prefix">%</h2>
+                  </div>
+                  <p class="funfact-2-title">Project Success</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="funfact-2-block alt2">
+                <div class="funfact-2-icon"><i class="icon-31"></i></div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <h2 class="funfact-2-number odometer" data-count="5">00</h2>
+                    <h2 class="funfact-2-number-prefix">k+</h2>
+                  </div>
+                  <p class="funfact-2-title">Happy Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Whychooseus -->
+      <section class="whychoous-2-section">
+        <div class="pattern-layer">
+          <div
+            class="pattern-1"
+            style="background-image: url(assets/images/shape/shape-20.png)"
+          ></div>
+          <div
+            class="pattern-2"
+            style="background-image: url(assets/images/shape/shape-21.png)"
+          ></div>
+        </div>
+        <div class="auto-container">
+          <div class="section_heading text-center mb_40">
+            <span class="section_heading_title_small">Why Choose Us</span>
+            <h2 class="section_heading_title_big mb_20">Why Choose Adwaa</h2>
+            <p class="">
+              "We offer comprehensive residential pool services, including
+              maintenance,,<br />
+              cleaning, and repairs, ensuring your pool stays safe and clean all
+              year round. Enjoy a hassle-free swimming experience with our
+              expert care."
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-17"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Quality Services</h4>
+                  <p class="whychoous-1-text">
+                    We deliver top pool services with a focus on excellence and
+                    customer satisfaction
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-18"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Experienced Team</h4>
+                  <p class="whychoous-1-text">
+                    Our skilled professionals ensure expert care and reliable
+                    solutions for your pool
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-9"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Safety Inspection</h4>
+                  <p class="whychoous-1-text">
+                    We prioritize a quick 
+                    response to meet your 
+                    needs without delay
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-20"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Affordable Pricing</h4>
+                  <p class="whychoous-1-text">
+                    Get premium pool services at budget-friendly rates without
+                    compromising on quality
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-21"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Quality Product</h4>
+                  <p class="whychoous-1-text">
+                    We use only the best products to enhance your pool’s
+                    durability and performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="whychoous-1-block mb_30">
+                <div class="whychoous-1-icon"><i class="icon-22"></i></div>
+                <div>
+                  <h4 class="whychoous-1-title">Quick Response</h4>
+                  <p class="whychoous-1-text">
+                    Our commitment to quality  ensures you receive only  the best
+                    products
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="section-padding pb-0 pt-0 mt_10">
+        <div class="auto-container fullwidth pt-0">
+          <div class="row row-10">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-block-1">
+                <div class="gallery-block-1-inner-box">
+                  <div class="gallery-block-10-image">
+                    <img src="https://html.tonatheme.com/2023/poolix/assets/images/gallery/gallery-1.jpg" alt="" />
+                  </div>
+                  <div class="gallery-block-1-overlay">
+                    <div class="gallery-block-1-lower-content">
+                      <div class="gallery-block-1-link-btn">
+                        <a
+                          href="assets/images/gallery/gallery-1.jpg"
+                          class="lightbox-image"
+                          data-fancybox="gallery"
+                          ><span class="icon-24"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-block-1">
+                <div class="gallery-block-1-inner-box">
+                  <div class="gallery-block-10-image">
+                    <img src="https://html.tonatheme.com/2023/poolix/assets/images/gallery/gallery-2.jpg" alt="" />
+                  </div>
+                  <div class="gallery-block-1-overlay">
+                    <div class="gallery-block-1-lower-content">
+                      <div class="gallery-block-1-link-btn">
+                        <a
+                          href="assets/images/gallery/gallery-2.jpg"
+                          class="lightbox-image"
+                          data-fancybox="gallery"
+                          ><span class="icon-24"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-block-1">
+                <div class="gallery-block-1-inner-box">
+                  <div class="gallery-block-10-image">
+                    <img src="https://html.tonatheme.com/2023/poolix/assets/images/gallery/gallery-3.jpg" alt="" />
+                  </div>
+                  <div class="gallery-block-1-overlay">
+                    <div class="gallery-block-1-lower-content">
+                      <div class="gallery-block-1-link-btn">
+                        <a
+                          href="assets/images/gallery/gallery-3.jpg"
+                          class="lightbox-image"
+                          data-fancybox="gallery"
+                          ><span class="icon-24"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="gallery-block-1">
+                <div class="gallery-block-1-inner-box">
+                  <div class="gallery-block-10-image">
+                    <img src="https://html.tonatheme.com/2023/poolix/assets/images/gallery/gallery-4.jpg" alt="" />
+                  </div>
+                  <div class="gallery-block-1-overlay">
+                    <div class="gallery-block-1-lower-content">
+                      <div class="gallery-block-1-link-btn">
+                        <a
+                          href="assets/images/gallery/gallery-4.jpg"
+                          class="lightbox-image"
+                          data-fancybox="gallery"
+                          ><span class="icon-24"></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <!-- <section class="section-padding">
+        <div class="auto-container">
+          <div class="section_heading text-center mb_50">
+            <span class="section_heading_title_small">Our Experts</span>
+            <h2 class="section_heading_title_big mb_20">
+              Expert Swimming Pool Repair <br />
+              Team Member
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="team-1-block">
+                <div class="team-1-image">
+                  <div class="team-1-image-wrap">
+                    <img src="assets/images/resource/team-1.jpg" alt="" />
+                  </div>
+                  <div class="team-1-share-icon-area">
+                    <ul class="team-1-social-icon">
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="hvr-zoom-1-primary hvr-zoom-1"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="hvr-zoom-1-primary hvr-zoom-1"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="hvr-zoom-1-primary hvr-zoom-1"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="team-1-share-icon"><i class="icon-23"></i></div>
+                  </div>
+                </div>
+                <div class="team-1-content">
+                  <h4 class="team-1-title">Robertson</h4>
+                  <p class="team-1-designaiton c_primary mb_10">Manager</p>
+                  <p>
+                    Amet minim mollit nonest <br />
+                    deserunt ulamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-1-block">
+                <div class="team-1-image">
+                  <div class="team-1-image-wrap">
+                    <img src="assets/images/resource/team-2.jpg" alt="" />
+                  </div>
+                  <div class="team-1-share-icon-area">
+                    <ul class="team-1-social-icon">
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="team-1-share-icon"><i class="icon-23"></i></div>
+                  </div>
+                </div>
+                <div class="team-1-content">
+                  <h4 class="team-1-title">Esther Howard</h4>
+                  <p class="team-1-designaiton c_primary mb_10">Engineer</p>
+                  <p>
+                    Amet minim mollit nonest <br />
+                    deserunt ulamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-1-block">
+                <div class="team-1-image">
+                  <div class="team-1-image-wrap">
+                    <img src="assets/images/resource/team-3.jpg" alt="" />
+                  </div>
+                  <div class="team-1-share-icon-area">
+                    <ul class="team-1-social-icon">
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="team-1-share-icon"><i class="icon-23"></i></div>
+                  </div>
+                </div>
+                <div class="team-1-content">
+                  <h4 class="team-1-title">Albert Flores</h4>
+                  <p class="team-1-designaiton c_primary mb_10">Technologist</p>
+                  <p>
+                    Amet minim mollit nonest <br />
+                    deserunt ulamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-1-block">
+                <div class="team-1-image">
+                  <div class="team-1-image-wrap">
+                    <img src="assets/images/resource/team-4.jpg" alt="" />
+                  </div>
+                  <div class="team-1-share-icon-area">
+                    <ul class="team-1-social-icon">
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="team-1-share-icon"><i class="icon-23"></i></div>
+                  </div>
+                </div>
+                <div class="team-1-content">
+                  <h4 class="team-1-title">Ronald Richards</h4>
+                  <p class="team-1-designaiton c_primary mb_10">Engineer</p>
+                  <p>
+                    Amet minim mollit nonest <br />
+                    deserunt ulamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- newsletter -->
+      <!-- <section class="newsletter-1">
+        <div class="auto-container">
+          <div class="newsletter-1-bg">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <h4 class="newsletter-1-title">Subscribe To Our Newsletter</h4>
+              </div>
+              <div class="col-lg-7">
+                <div class="newsletter-1-form">
+                  <form>
+                    <input type="email" placeholder="e-mail address" />
+                    <button class="btn-1">Subscribe Now <span></span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <footer class="main-footer">
+        <div class="footer-1-shape">
+          <img src="assets/images/shape/footer-shape.svg" alt="" />
+        </div>
+        <div class="footer-1-middle">
+          <div class="auto-container">
+            <div class="p_relative">
+              <div class="logo mb_70">
+                <img
+                  src="assets/images/adwa_logo.png"
+                  alt=""
+                  style="
+                    width: 220px; /* Adjust width */
+                    height: 150px; /* Adjust height */
+                    object-fit: contain;
+                  "
+                />
+              </div>
+              <div class="footer-1-shape-1 d-none d-lg-block">
+                <img src="assets/images/shape/shape-5.png" alt="" />
+              </div>
+              <div class="footer-1-shape-2 d-none d-lg-block">
+                <img src="assets/images/shape/shape-6.png" alt="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="contact-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">About Us</h4>
+                  </div>
+                  <p class="mb_30">
+                    ADWAA swimming pool contracting company provides technical
+                    services specialised in pool maintenance and installation.
+                    Our misson is to provide a strong relationship with our
+                    clients, catering to every requirement on a longterm basis
+                  </p>
+                  <ul class="footer-social-icon d-flex align-items-center">
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="link-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Links</h4>
+                  </div>
+                  <ul class="link-widget-1-list">
+                    <li><a href="javascript:void(0);">About Us</a></li>
+                    <li><a href="javascript:void(0);">Services</a></li>
+                    <li><a href="javascript:void(0);">Case</a></li>
+                    <li><a href="javascript:void(0);">Pool Repair</a></li>
+                    <li><a href="javascript:void(0);">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="link-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Working Hours</h4>
+                  </div>
+                  <p class="mb_25">
+                    Reach out for expert pool services today! <br /><br>
+                    We are avaliable : 
+                  </p>
+                  <p>
+                    Mon - Fri: 9:00AM - 6:00PM <br />
+                    Sat - Sun: 8:00AM - 4:00PM
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Get In Touch</h4>
+                  </div>
+                  <p>Let’s make your pool perfect—contact us today!.</p>
+                  <ul class="contact-widget-1-list">
+                    <li><span>Add:</span> P.O.Box:4721, Ajman, U.A.E </li>
+                    <li>
+                      <span>Email:</span
+                      ><a href="mailto:example@poolix.com"
+                        > adwaapools@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <span>Phone:</span
+                      ><a href="tel:0504199263">0504199263</a> <br>
+                      <span>Tel:</span>
+                      <a href="phone:0568036012">0568036012</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="footer-bottom-row">
+              <div class="footer-bottom-text">
+                Copyright 2023 by <a href="javascript:void(0);">Poolix</a> theme
+                All Right Reserved.
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </footer>
+    </div>
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top">
+      <div>
+        <div class="scroll-top-inner">
+          <div class="scroll-bar">
+            <div class="bar-inner"></div>
+          </div>
+          <div class="scroll-bar-text">Go To Top</div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll to top end -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="assets/js/booking-form.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

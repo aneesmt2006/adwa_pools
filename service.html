@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Poolix Hotel & Resort HTML Template</title>
+<!-- Stylesheets -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- Responsive File -->
+<link href="assets/css/responsive.css" rel="stylesheet">
+<!-- Color File -->
+<link href="assets/css/color.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <div class="loader-wrap">
+        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>        
+        <div class="layer layer-three"><span class="overlay"></span></div>        
+    </div>
+
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+    </script>
+
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="fal fa-times"></span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                            <input type="submit" value="Search Now!" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+                <br>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Idea</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Growth</a></li>
+                    <li><a href="#">Plan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title text-center">
+        <div class="bg-layer" style="background-image: url(assets/images/pexels-ajaybhargavguduru-863988.jpg);"></div>
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Our Services</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Our Services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+
+    <!-- Services -->
+    <section class="service-page-section pt_150 pb_140 gray-bg">
+        <div class="auto-container">
+            <div class="section_heading text-center mb_60">
+                <span class="section_heading_title_small">Services</span>
+                <h2 class="section_heading_title_big">Swimming Pool Facilities <br> & Services</h2>
+            </div>
+            <div class="inner-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-1.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-9"></i></a></div>
+                            <h4 class="service-1-title">Equipment Install</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Equipment Install</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-2.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-10"></i></a></div>
+                            <h4 class="service-1-title">Drain & Clean</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Drain & Clean</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-3.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-11"></i></a></div>
+                            <h4 class="service-1-title">Water Analysis</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Water Analysis</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-4.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-12"></i></a></div>
+                            <h4 class="service-1-title">Pool Maintenance</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Pool Maintenance</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-9.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-6"></i></a></div>
+                            <h4 class="service-1-title">Commercial Pool</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details-2.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Commercial Pool</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-10.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-14"></i></a></div>
+                            <h4 class="service-1-title">Interior Pool Surface</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Interior Pool Surface</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://html.tonatheme.com/2023/poolix/assets/images/resource/service-11.jpg" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-15"></i></a></div>
+                            <h4 class="service-1-title">Pool Inspections</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details-6.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Pool Inspections</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                        <div class="service-1-block text-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
+                            <div class="service-1-image hvr-img-zoom-1"><img src="https://5.imimg.com/data5/VP/PP/MY-2664323/pool-garden-lights.jpg" style="" alt=""></div>
+                            <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-16"></i></a></div>
+                            <h4 class="service-1-title">Pool Lighting</h4>
+                            <div class="service-1-block-overlay text-center">
+                                <div class="service-1-link"><a class="service-1-link-btn hvr-zoom-1 hvr-zoom-1-primary" href="service-details.html"><i class="icon-3"></i></a></div>
+                                <h4 class="service-1-title">Pool Lighting</h4>
+                                <p class="service-1-text">Lorem ipsum dolor amet coset <br> etur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- pricing-section -->
+    <section class="pricing-section section-padding">
+        <div class="auto-container">
+            <div class="section_heading text-center mb_60">
+                <span class="section_heading_title_small">Pricing Table</span>
+                <h2 class="section_heading_title_big">Not Any Hidden Charge, Choose <br />Our Pricing Plan</h2>
+            </div>
+            <div class="tabs-box">
+                <div class="tab-btn-box mb_60 text-center">
+                    <ul class="tab-btns tab-buttons clearfix p_relative d_iblock">
+                        <li class="tab-btn active-btn" data-tab="#tab-1">Monthly</li>
+                        <li class="tab-btn" data-tab="#tab-2">Yearly</li>
+                    </ul>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab active-tab" id="tab-1">
+                        <div class="row clearfix">
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one">
+                                    <div class="pricing-table">
+                                        <h3>Salt Water Service</h3>
+                                        <div class="price-box">
+                                            <h2>$50.99</h2>
+                                            <span class="packages">/ Monthly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1 alt">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one active-block">
+                                    <div class="pricing-table">
+                                        <h3>Full Pool Service</h3>
+                                        <div class="price-box">
+                                            <h2>$70.99</h2>
+                                            <span class="packages">/ Monthly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one">
+                                    <div class="pricing-table">
+                                        <h3>Chemical Only</h3>
+                                        <div class="price-box">
+                                            <h2>$90.99</h2>
+                                            <span class="packages">/ Monthly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1 alt">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab-2">
+                        <div class="row clearfix">
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one">
+                                    <div class="pricing-table">
+                                        <h3>Salt Water Service</h3>
+                                        <div class="price-box">
+                                            <h2>$80.99</h2>
+                                            <span class="packages">/ Yearly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1 alt">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one active-block">
+                                    <div class="pricing-table">
+                                        <h3>Full Pool Service</h3>
+                                        <div class="price-box">
+                                            <h2>$99.99</h2>
+                                            <span class="packages">/ Yearly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                                <div class="pricing-block-one">
+                                    <div class="pricing-table">
+                                        <h3>Chemical Only</h3>
+                                        <div class="price-box">
+                                            <h2>$149.99</h2>
+                                            <span class="packages">/ Yearly</span>
+                                        </div>
+                                        <ul class="feature-list clearfix">
+                                            <li><i class="icon-45"></i>Test the pool</li>
+                                            <li><i class="icon-45"></i>Pressure Testing Lines</li>
+                                            <li><i class="icon-45"></i>Autometic Cleaners</li>
+                                            <li><i class="icon-45"></i>Lake Lines Underground</li>
+                                            <li><i class="icon-45"></i>Heater and Venting</li>
+                                        </ul>
+                                        <div class="btn-box"><a href="service.html" class="btn-1 alt">Select Plan <span></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing-section end -->
+
+
+    <!-- newsletter -->
+    <!-- <section class="newsletter-1">
+        <div class="auto-container">
+            <div class="newsletter-1-bg">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <h4 class="newsletter-1-title">Subscribe To Our Newsletter</h4>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="newsletter-1-form">
+                            <form>
+                                <input type="email" placeholder="e-mail address">
+                                <button class="btn-1">Subscribe Now <span></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="main-footer">
+        <div class="footer-1-shape">
+          <img src="assets/images/shape/footer-shape.svg" alt="" />
+        </div>
+        <div class="footer-1-middle">
+          <div class="auto-container">
+            <div class="p_relative">
+              <div class="logo mb_70">
+                <img
+                  src="assets/images/adwa_logo.png"
+                  alt=""
+                  style="
+                    width: 220px; /* Adjust width */
+                    height: 150px; /* Adjust height */
+                    object-fit: contain;
+                  "
+                />
+              </div>
+              <div class="footer-1-shape-1 d-none d-lg-block">
+                <img src="assets/images/shape/shape-5.png" alt="" />
+              </div>
+              <div class="footer-1-shape-2 d-none d-lg-block">
+                <img src="assets/images/shape/shape-6.png" alt="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="contact-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">About Us</h4>
+                  </div>
+                  <p class="mb_30">
+                    ADWAA swimming pool contracting company provides technical
+                    services specialised in pool maintenance and installation.
+                    Our misson is to provide a strong relationship with our
+                    clients, catering to every requirement on a longterm basis
+                  </p>
+                  <ul class="footer-social-icon d-flex align-items-center">
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="hvr-zoom-1-primary hvr-zoom-1"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="link-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Links</h4>
+                  </div>
+                  <ul class="link-widget-1-list">
+                    <li><a href="javascript:void(0);">About Us</a></li>
+                    <li><a href="javascript:void(0);">Services</a></li>
+                    <li><a href="javascript:void(0);">Case</a></li>
+                    <li><a href="javascript:void(0);">Pool Repair</a></li>
+                    <li><a href="javascript:void(0);">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="link-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Working Hours</h4>
+                  </div>
+                  <p class="mb_25">
+                    Reach out for expert pool services today! <br /><br>
+                    We are avaliable : 
+                  </p>
+                  <p>
+                    Mon - Fri: 9:00AM - 6:00PM <br />
+                    Sat - Sun: 8:00AM - 4:00PM
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="contact-widget-1 mb_30">
+                  <div class="mb_30">
+                    <h4 class="fw_sbold c_light">Get In Touch</h4>
+                  </div>
+                  <p>Let’s make your pool perfect—contact us today!.</p>
+                  <ul class="contact-widget-1-list">
+                    <li><span>Add:</span> P.O.Box:4721, Ajman, U.A.E </li>
+                    <li>
+                      <span>Email:</span
+                      ><a href="mailto:example@poolix.com"
+                        > adwaapools@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <span>Phone:</span
+                      ><a href="tel:0504199263">0504199263</a> <br>
+                      <span>Tel:</span>
+                      <a href="phone:0568036012">0568036012</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="footer-bottom-row">
+              <div class="footer-bottom-text">
+                Copyright 2023 by <a href="javascript:void(0);">Poolix</a> theme
+                All Right Reserved.
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </footer>
+	
+</div>
+
+<!--Scroll to top-->
+<div class="scroll-to-top">
+    <div>
+        <div class="scroll-top-inner">
+            <div class="scroll-bar">
+                <div class="bar-inner"></div>
+            </div>
+            <div class="scroll-bar-text">Go To Top</div>
+        </div>
+    </div>
+</div>
+<!-- Scroll to top end -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/isotope.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="assets/js/booking-form.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
