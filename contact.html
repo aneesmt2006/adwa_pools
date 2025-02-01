@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Poolix Hotel & Resort HTML Template</title>
+<title>Adwaa-pools</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -15,8 +15,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link
+      rel="shortcut icon"
+      href="assets/images/download-resizehood.com (2).png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/images/download-resizehood.com (2).png" type="image/x-icon" />
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,7 +116,7 @@
                         <div class="inner-box">
                             <div class="icon-box"><i class="icon-59"></i></div>
                             <h3>Email Address</h3>
-                            <p><a href="mailto:adwaapools@gmail.com">adwaapools@gmail.com</a><br /><a href="mailto:adwaapools@gmail.com">support@example.com</a></p>
+                            <p><a href="mailto:adwaapools@gmail.com">adwaapools@gmail.com</a><br /><a href="mailto:adwaapools@gmail.com">---------</a></p>
                         </div>
                     </div>
                 </div>
@@ -145,26 +149,49 @@
                     <h2 class="section_heading_title_big">Get in Touch with Poolix</h2>
                 </div>
                 <div class="form-inner">
-                    <form method="post" action="sendemail.php" id="contact-form" class="default-form"> 
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="username" placeholder="Your Name" required="">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="email" name="email" placeholder="Your email" required="">
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input type="text" name="phone" required="" placeholder="Phone">
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <textarea name="message" placeholder="message"></textarea>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn text-center">
-                                <button class="btn-1" type="submit" name="submit-form">Send Message <span></span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                  <form id="contact-form" class="default-form"> 
+                      <div class="row clearfix">
+                          <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                              <input type="text" id="username" name="username" placeholder="Your Name" required="">
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                              <input type="email" id="email" name="email" placeholder="Your email" required="">
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                              <input type="text" id="phone" name="phone" required="" placeholder="Phone">
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                              <textarea id="message" name="message" placeholder="Message"></textarea>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn text-center">
+                              <button class="btn-1" type="submit">Send Message <span></span></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+              <script>
+              document.getElementById("contact-form").addEventListener("submit", function(event) {
+                  event.preventDefault(); // Prevent default form submission
+              
+                  // Get form values
+                  let name = document.getElementById("username").value;
+                  let email = document.getElementById("email").value;
+                  let phone = document.getElementById("phone").value;
+                  let message = document.getElementById("message").value;
+              
+                  // Construct mailto link
+                  let mailtoLink = `mailto:adwaapools@gmail.com?subject=Contact Form Submission&body=
+                  Name: ${name}%0A
+                  Email: ${email}%0A
+                  Phone: ${phone}%0A
+                  Message: ${message}`;
+              
+                  // Open email client
+                  window.location.href = mailtoLink;
+              });
+              </script>
+              
             </div>
         </div>
     </section>
@@ -269,11 +296,11 @@
                     <h4 class="fw_sbold c_light">Links</h4>
                   </div>
                   <ul class="link-widget-1-list">
-                    <li><a href="javascript:void(0);">About Us</a></li>
-                    <li><a href="javascript:void(0);">Services</a></li>
-                    <li><a href="javascript:void(0);">Case</a></li>
-                    <li><a href="javascript:void(0);">Pool Repair</a></li>
-                    <li><a href="javascript:void(0);">Contact us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                   </ul>
                 </div>
               </div>
@@ -310,7 +337,7 @@
                       <span>Phone:</span
                       ><a href="tel:0504199263">0504199263</a> <br>
                       <span>Tel:</span>
-                      <a href="phone:0568036012">0568036012</a>
+                      <a href="phone:0568036012">+971 568036012</a>
                     </li>
                   </ul>
                 </div>
